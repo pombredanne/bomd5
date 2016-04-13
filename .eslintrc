@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "amd": true
+    },
+
+    "rules": {
+        "no-console": 2,
+        "guard-for-in": 2,
+        "radix": 2,
+        "wrap-iife": 2,
+        "strict": [2, "function"],
+        "no-undefined": 2,
+        "indent": [2, 4],
+        "brace-style": [2, "1tbs", { "allowSingleLine": false }],
+        "comma-style": [2, "last"],
+        "func-style": [2, "expression"],
+        "no-underscore-dangle": 0,
+        "quote-props": [2, "always"],
+        "space-before-blocks": [2, "always"],
+        "spaced-line-comment": [2, "always"]
+    }
+}

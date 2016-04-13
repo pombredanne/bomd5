@@ -1,0 +1,23 @@
+{
+  "name": "bomd5",
+  "version": "1.0.4",
+  "description": "An incremental MD5 hashing library",
+  "author": "Joachim Viide <jviide@codenomicon.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/codenomicon/bomd5"
+  },
+  "keywords": [
+    "md5"
+  ],
+  "main": "lib/MD5.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --ui tdd test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^0.14.1",
+    "mocha": "^2.1.0"
+  }
+}
