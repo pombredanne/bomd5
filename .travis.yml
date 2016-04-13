@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+    - "5.10"
+    - "4"
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "Axc6hLd+wUHLPLbNSza0vbSHaIubj5WbSk81BhiuZR1DC9UFpFX9enrUjrHDdjKu7kWHawrfYZYWJlcoXHOuabde5IlaLTyTT+3ug60JY1K0veV5E5cdgSfpzs+dR/oa06IoMNbPA2SQ/wTYWW9ifbxaz4qP8j7QxUDGkwpvLy1l9n51enFgEFJfAZjUU6xVP5KzlluuSSpHw2gYnm5CtYCBD1ZbyTNlhXzQ1TfIEBxpxMLEMvsuRQ5H95nV6bmrrQbYVNzSDzmvMJxnBGjUQm2iDxmnynR1ZQIDGER4yPH3JBT24MByLGgVBdeWU1aPnIxK93c+xrP4m659UVUDiMuL9uAMla9EqOBfgLg8KYAvHbhcDQ3E6bG0i77F4hMgxLSF6guIklVmLNtICMw1eqYRn+O3PKfplTXW/ed0JwGE3RxCKEEE6UxDiaieFTHxOnsPagp8sawjVdHzIqPCRGOliXZvGVSckZvgwn65SuAfAu1cKObW32lXQ0pdQtu+9Bfmuq78JOdtxk89iu7FADEWR0fbWiowEWuo4rzC4JSztjQXDyp5tYuTrq5AFIuJMo6OFczdrhB4WohhAavr41912RZCAZPEevaqPvt4rvZ2FHHW3sFF/5OJl1olgdQtmZLu82KDNnn1imEmrCYTipVJdqZPd8mXrEkalH5IN8w="
+
+addons:
+  coverity_scan:
+    project:
+      name: "softcert/bomd5"
+      description: "A dependency-free incremental MD5 hashing library for modern(ish) browsers."
+    notification_email: erani@iki.fi
+    build_command_prepend: ""
+    build_command:   "--no-command --fs-capture-search ./lib"
+    branch_pattern: coverity-scan
