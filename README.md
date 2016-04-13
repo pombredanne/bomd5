@@ -1,4 +1,4 @@
-# bomd5
+# bomd5 [![Coverity Scan](https://img.shields.io/coverity/scan/8559.svg)](https://scan.coverity.com/projects/softcert-vsroom) [![Build Status](https://travis-ci.org/softcert/bomd5.svg?branch=master)](https://travis-ci.org/softcert/bomd5)
 
 A dependency-free incremental MD5 hashing library for modern(ish) browsers.
 
